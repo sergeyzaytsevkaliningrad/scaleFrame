@@ -13,8 +13,8 @@ var iPhone: [String : CGFloat] = ["iPhone7" : 375, "iPhone8" : 375, "iPhone8+" :
 
 var iPhone_y: [String : CGFloat] = ["iPhone7" : 667, "iPhone7+" : 736, "iPhone8" : 667, "iPhone8+" : 736,"iPhoneX" : 812, "iPhoneXR" : 414, "iPhoneXS" : 812, "iPhoneXS Max" : 896, "iPhone11" : 812,"iPhone12" : 812,"iPhone13" : 812,"iPhone14" : 812,"iPhone11 Pro" : 812,"iPhone12 Pro" : 812,"iPhone13 Pro" : 812, "iPhone11 Pro Max" : 896,"iPhone12 Pro Max" : 896,"iPhone13 Pro Max" : 896]
 
-func scaleScreen(_ value : CGFloat, nameIphone: String) -> CGFloat{
-    let x = UIScreen.main.bounds.width/375  //(iPhone[nameIphone] ?? 375)
+func scaleScreen(_ value : CGFloat) -> CGFloat{
+    let x = UIScreen.main.bounds.width/375 
     return value * x
 }
 
